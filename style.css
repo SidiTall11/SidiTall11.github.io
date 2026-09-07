@@ -318,14 +318,6 @@ html, body {
     line-height: 1.7;
 }
 
-.resume-download {
-    display: inline-flex;
-    align-items: center;
-    gap: .7rem;
-    margin-top: 1.5rem;
-    font-size: 1.35rem;
-}
-
 .resume-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
