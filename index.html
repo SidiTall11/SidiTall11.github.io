@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidi Tall - Développeur Fullstack</title>
+    <meta name="description" content="Portfolio de Sidi Tall, développeur fullstack basé au Burkina Faso. Spécialisé en React, Django, Flutter et PostgreSQL.">
+    <link rel="canonical" href="https://siditall11.github.io/">
+    <meta property="og:title" content="Sidi Tall - Développeur Fullstack">
+    <meta property="og:description" content="Portfolio de Sidi Tall, développeur fullstack spécialisé en applications web, mobile et desktop.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://siditall11.github.io/">
+    <meta property="og:image" content="https://siditall11.github.io/images/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sidi Tall - Développeur Fullstack">
+    <meta name="twitter:description" content="Portfolio de Sidi Tall, développeur fullstack spécialisé en applications web, mobile et desktop.">
+    <meta name="twitter:image" content="https://siditall11.github.io/images/og-image.svg">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260907-2">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sidi Tall",
+      "jobTitle": "Développeur Fullstack",
+      "url": "https://siditall11.github.io/",
+      "email": "mailto:tallsidi254@gmail.com",
+      "telephone": "+22677714871",
+      "address": {"@type": "PostalAddress", "addressCountry": "BF"},
+      "sameAs": [
+        "https://github.com/SidiTall11",
+        "https://www.linkedin.com/in/sidi-tall-a241b341a/",
+        "https://www.facebook.com/sidi.tall.35/"
+      ],
+      "knowsAbout": ["React", "Django", "Flutter", "PostgreSQL", "JavaScript"]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#" class="nav-btn active" data-section="home" data-tooltip="Accueil" aria-label="Accueil"><i class='bx bx-home-alt-2'></i></a>
+            <a href="#" class="nav-btn" data-section="about" data-tooltip="À Propos" aria-label="À propos"><i class='bx bx-user'></i></a>
+            <a href="#" class="nav-btn" data-section="resume" data-tooltip="CV" aria-label="Curriculum Vitae"><i class='bx bx-file-blank'></i></a>
+            <a href="#" class="nav-btn" data-section="portfolio" data-tooltip="Portfolio" aria-label="Portfolio"><i class='bx bx-grid-alt'></i></a>
+            <a href="#" class="nav-btn" data-section="contact" data-tooltip="Contact" aria-label="Contact"><i class='bx bx-chat'></i></a>
+        </div>
+    </nav>
+    <div class="cube-wrapper">
+        <div class="cube">
+            <!-- HOME -->
+    <div id="home" class="section active">
+        <div class="home-content">
+            <h3>Bonjour, je suis</h3>
+            <h1>Sidi Tall</h1>
+            <h3 class="subtitle">Développeur Fullstack</h3>
+            <p>Développeur Fullstack passionné, spécialisé dans la création d'applications web performantes. Maîtrisant aussi bien le frontend que le backend, je conçois des expériences digitales fluides alliant design moderne et architecture robuste.</p>
+            <div class="home-sci">
+                <a href="#" class="btn nav-trigger" data-section="resume">Consulter mon CV</a>
+                <div class="sci">
+                    <a href="https://github.com/SidiTall11" target="_blank" rel="noopener noreferrer" data-tooltip="GitHub" aria-label="Voir mon profil GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/sidi-tall-a241b341a/" target="_blank" rel="noopener noreferrer" data-tooltip="LinkedIn" aria-label="Voir mon profil LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/sidi.tall.35/" target="_blank" rel="noopener noreferrer" data-tooltip="Facebook" aria-label="Voir mon profil Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://wa.me/22677714871?text=Bonjour%20Sidi%2C%20je%20souhaite%20discuter%20d%27un%20projet." target="_blank" rel="noopener noreferrer" data-tooltip="WhatsApp" aria-label="Contacter Sidi sur WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:tallsidi254@gmail.com?subject=Demande%20de%20projet" data-tooltip="Email" aria-label="Envoyer un email"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <img src="images/ok.jpg" alt="Portrait de Sidi Tall">
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="section">
+        <div class="about-img">
+            <div class="img-box">
+                <img src="images/ok.jpg" alt="Portrait de Sidi Tall" loading="lazy">
+            </div>
+        </div>
+        <div class="about-content">
+            <h2 class="heading">À Propos de <span>Moi</span></h2>
+            <h3>Développeur Fullstack !</h3>
+            <p>Développeur fullstack basé au Burkina Faso, je conçois des applications web, mobiles et desktop évolutives. Spécialisé dans les technologies modernes — React, Django, Flutter et PostgreSQL — je m'investis dans chaque projet avec rigueur et créativité pour transformer les besoins métier en solutions fiables et utiles.</p>
+            <a href="#" class="btn nav-trigger" data-section="resume">Voir mon CV</a>
+        </div>
+    </div>
+
+    <!-- RESUME -->
+    <div id="resume" class="section resume-section">
+        <div class="resume-container modern-resume">
+            <header class="resume-header">
+                <h2 class="resume-title">Curriculum Vitae</h2>
+                <p>Développeur fullstack et mobile spécialisé dans la conception d'applications web, desktop et mobiles performantes. Je transforme les besoins métier en solutions fiables, modernes et faciles à utiliser.</p>
+            </header>
+            <div class="resume-layout">
+                <div class="resume-column">
+                    <section class="resume-block">
+                        <h3 class="resume-section-title">Formation</h3>
+                        <article class="timeline-item"><span class="year">2023 – 2026</span><h4>Licence en Génie Logiciel</h4><p class="company">Université Aube Nouvelle</p><p>Développement logiciel, algorithmique, bases de données, développement web et mobile.</p></article>
+                        <article class="timeline-item"><span class="year">2020 – 2023</span><h4>Baccalauréat : Sciences</h4><p class="company">Lycée Privé Kodonso — Bobo-Dioulasso</p></article>
+                        <article class="timeline-item"><span class="year">2016 – 2020</span><h4>Brevet d'Étude du Premier Cycle</h4><p class="company">Lycée Privé Évangélique — Ouagadougou</p></article>
+                    </section>
+                    <section class="resume-block">
+                        <h3 class="resume-section-title">Formations complémentaires</h3>
+                        <ul class="resume-list"><li>Développeur web frontend</li><li>Fondements de la programmation</li><li>L'essentiel de JavaScript et CSS</li><li>Fondements du DevOps</li><li>Marketing digital et outils numériques</li></ul>
+                    </section>
+                    <section class="resume-block">
+                        <h3 class="resume-section-title">Compétences professionnelles</h3>
+                        <div class="skill-level"><div><span>Frontend — HTML, CSS, JavaScript, React</span><b>Avancé</b></div><span class="skill-track"><span style="width:90%"></span></span></div>
+                        <div class="skill-level"><div><span>Backend — Python, Django, Node.js</span><b>Avancé</b></div><span class="skill-track"><span style="width:85%"></span></span></div>
+                        <div class="skill-level"><div><span>Mobile/Desktop — Flutter, Dart</span><b>Avancé</b></div><span class="skill-track"><span style="width:85%"></span></span></div>
+                        <div class="skill-level"><div><span>Bases de données — PostgreSQL, Firebase</span><b>Opérationnel</b></div><span class="skill-track"><span style="width:78%"></span></span></div>
+                        <div class="skill-level"><div><span>Git, déploiement et architecture</span><b>Opérationnel</b></div><span class="skill-track"><span style="width:75%"></span></span></div>
+                    </section>
+                </div>
+                <div class="resume-column">
+                    <section class="resume-block">
+                        <h3 class="resume-section-title">Expérience & réalisations</h3>
+                        <article class="timeline-item"><span class="year">2025 – aujourd'hui</span><h4>Développeur fullstack — Djago Gestion</h4><p class="company">Application web de gestion pour PME</p><ul class="resume-list"><li>Gestion de caisse, stocks et finances.</li><li>Tableaux de bord et rapports en temps réel.</li><li>Déploiement sur Vercel.</li></ul></article>
+                        <article class="timeline-item"><span class="year">2025 – 2026</span><h4>Développeur mobile — Dames Élite</h4><p class="company">Flutter / Dart — Google Play Store</p><ul class="resume-list"><li>Jeu de dames avec IA à quatre niveaux.</li><li>Multijoueur en ligne et puzzles quotidiens.</li><li>Publication sur Google Play Store.</li></ul></article>
+                        <article class="timeline-item"><span class="year">2025</span><h4>Développeur desktop — Harmony Security</h4><p class="company">Flutter — Gestion de sécurité privée</p><ul class="resume-list"><li>Gestion des agents, sites et présences.</li><li>Génération de rapports et interface métier.</li></ul></article>
+                    </section>
+                    <section class="resume-block">
+                        <h3 class="resume-section-title">Distinctions & publications</h3>
+                        <ul class="resume-list"><li>Application Dames Élite publiée sur Google Play Store.</li><li>Note annoncée de 4,8/5 sur la boutique.</li><li>Projets web et API disponibles en démonstration.</li></ul>
+                    </section>
+                    <section class="resume-block">
+                        <h3 class="resume-section-title">Certifications</h3>
+                        <div class="cert-links">
+                            <a href="Mes certificats/Attestation_de_formation_OIF.pdf" target="_blank" rel="noopener noreferrer">Attestation de formation OIF <i class='bx bx-link-external'></i></a>
+                            <a href="Mes certificats/CertificatDaccomplissement_Devenir developpeur  developpeuse web frontend.pdf" target="_blank" rel="noopener noreferrer">Développeur Web Frontend <i class='bx bx-link-external'></i></a>
+                            <a href="Mes certificats/CertificatDaccomplissement_Les fondements de la programmation.pdf" target="_blank" rel="noopener noreferrer">Fondements de la programmation <i class='bx bx-link-external'></i></a>
+                            <a href="Mes certificats/CertificatDaccomplissement_Les fondements du DevOps.pdf" target="_blank" rel="noopener noreferrer">Fondements du DevOps <i class='bx bx-link-external'></i></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="section portfolio-section">
+        <div class="resume-container">
+            <h2 class="resume-title">Portfolio</h2>
+
+            <!-- Tabs -->
+            <div class="resume-tabs portfolio-tabs" role="tablist" aria-label="Sections du portfolio">
+                <button type="button" role="tab" aria-selected="true" aria-controls="tab-my-work" class="tab-btn active" data-tab="my-work">Mes Projets</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="tab-my-service" class="tab-btn" data-tab="my-service">Mes Services</button>
+            </div>
+
+            <!-- My Work Tab -->
+            <div class="tab-content active" id="tab-my-work" role="tabpanel">
+                <div class="portfolio-grid">
+
+                    <div class="portfolio-box">
+                        <div class="portfolio-img">
+                            <img src="images/project_harmony.jpg" alt="Aperçu de Harmony Security" loading="lazy">
+                        </div>
+                        <div class="portfolio-layer">
+                            <h4>Harmony Security</h4>
+                            <p>Application desktop Flutter de gestion de sécurité — agents, sites, présence & rapports.</p>
+                            <a href="projects/harmony/index.html" target="_blank" rel="noopener noreferrer" aria-label="Voir Harmony Security"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <div class="portfolio-img">
+                            <img src="images/project_checkers.jpg" alt="Aperçu de Dames Élite" loading="lazy">
+                        </div>
+                        <div class="portfolio-layer">
+                            <h4>Dames Élite</h4>
+                            <p>Jeu de dames mobile (Flutter) — IA 4 niveaux, multijoueur en ligne, thèmes premium. Disponible sur Play Store. Note : 4.8★</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.fasodames.elite_dames" target="_blank" rel="noopener noreferrer" aria-label="Voir Dames Élite sur Google Play"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <div class="portfolio-img">
+                            <img src="images/project_portfolio.jpg" alt="Aperçu du portfolio 3D" loading="lazy">
+                        </div>
+                        <div class="portfolio-layer">
+                            <h4>Portfolio 3D</h4>
+                            <p>Portfolio personnel avec navigation en cube 3D, animations et design neon-cyan.</p>
+                            <a href="#" class="nav-trigger" data-section="portfolio" aria-label="Voir le portfolio 3D"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <div class="portfolio-img">
+                            <img src="images/project_ecommerce.jpg" alt="Aperçu de l'application e-commerce" loading="lazy">
+                        </div>
+                        <div class="portfolio-layer">
+                            <h4>E-Commerce App</h4>
+                            <p>Application e-commerce full-stack avec gestion de catalogue, panier et paiement.</p>
+                            <a href="projects/ecommerce/index.html" target="_blank" rel="noopener noreferrer" aria-label="Voir l'application e-commerce"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <div class="portfolio-img">
+                            <img src="images/project_api.jpg" alt="Aperçu de la documentation REST API" loading="lazy">
+                        </div>
+                        <div class="portfolio-layer">
+                            <h4>REST API Backend</h4>
+                            <p>API RESTful scalable avec Django & PostgreSQL, authentification JWT et documentation Swagger.</p>
+                            <a href="projects/api/index.html" target="_blank" rel="noopener noreferrer" aria-label="Voir la documentation REST API"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <div class="portfolio-img">
+                            <div style="width:100%; height:100%; background:linear-gradient(135deg, #4f46e5 0%, #1a1a4a 100%); display:flex; align-items:center; justify-content:center;">
+                                <i class='bx bx-store-alt' style="font-size:6rem; color:rgba(255,255,255,0.4);"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-layer">
+                            <h4>Djago Gestion</h4>
+                            <p>Application web de gestion PME — caisse, stock, finances et rapports en temps réel. Hébergée sur Vercel.</p>
+                            <a href="https://djagogestion.vercel.app/login" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir Djago Gestion"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- My Service Tab -->
+            <div class="tab-content" id="tab-my-service" role="tabpanel">
+                <div class="services-intro">
+                    <p>Des solutions numériques conçues pour répondre à un besoin concret, de la première idée jusqu'à la mise en ligne.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon"><i class='bx bx-code-alt'></i></div>
+                        <span class="service-number">01</span>
+                        <h3>Applications web</h3>
+                        <p>Des interfaces rapides, responsives et faciles à utiliser pour présenter votre activité ou gérer vos opérations.</p>
+                        <ul><li>Site vitrine et landing page</li><li>Application métier et tableau de bord</li><li>Intégration responsive et SEO de base</li></ul>
+                        <div class="service-tags"><span>React</span><span>JavaScript</span><span>Django</span></div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon"><i class='bx bx-mobile-alt'></i></div>
+                        <span class="service-number">02</span>
+                        <h3>Applications mobiles & desktop</h3>
+                        <p>Des applications Flutter adaptées aux besoins des utilisateurs, avec une expérience cohérente sur mobile et ordinateur.</p>
+                        <ul><li>Application Android et iOS</li><li>Application desktop multiplateforme</li><li>Connexion à une API et stockage des données</li></ul>
+                        <div class="service-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon"><i class='bx bx-server'></i></div>
+                        <span class="service-number">03</span>
+                        <h3>API & systèmes backend</h3>
+                        <p>Un backend structuré et sécurisé pour faire fonctionner vos applications et centraliser vos données.</p>
+                        <ul><li>API REST et authentification</li><li>Gestion des rôles et bases de données</li><li>Documentation et déploiement cloud</li></ul>
+                        <div class="service-tags"><span>Python</span><span>Django</span><span>PostgreSQL</span></div>
+                    </article>
+                </div>
+                <div class="services-cta">
+                    <span>Vous avez un projet en tête ?</span>
+                    <a href="#" class="btn nav-trigger" data-section="contact">Discutons de votre projet <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <section class="process-section">
+                    <h3>Mon processus de travail</h3>
+                    <div class="process-grid">
+                        <article><span>01</span><i class='bx bx-conversation'></i><h4>Échange</h4><p>Comprendre votre besoin, vos objectifs et vos contraintes.</p></article>
+                        <article><span>02</span><i class='bx bx-bulb'></i><h4>Conception</h4><p>Définir une solution claire, réaliste et adaptée à votre activité.</p></article>
+                        <article><span>03</span><i class='bx bx-code-alt'></i><h4>Développement</h4><p>Construire votre produit avec un code propre et maintenable.</p></article>
+                        <article><span>04</span><i class='bx bx-rocket'></i><h4>Livraison</h4><p>Tester, déployer et vous accompagner après la mise en ligne.</p></article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="section contact-section">
+        <div class="contact-container">
+            <header class="contact-header">
+                <h2 class="heading">Parlons de votre <span>projet</span></h2>
+                <p>Une idée, un besoin métier ou un projet à développer ? Écrivez-moi et discutons-en.</p>
+            </header>
+
+            <div class="contact-layout">
+                <aside class="contact-card contact-details">
+                    <h3>Mes coordonnées</h3>
+                    <p class="contact-intro">Je suis disponible pour répondre à vos besoins et vous accompagner dans vos projets.</p>
+
+                    <div class="contact-detail">
+                        <i class='bx bx-map'></i>
+                        <div><strong>Localisation</strong><span>Burkina Faso</span></div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class='bx bx-phone'></i>
+                        <div><strong>Téléphone</strong><a href="tel:+22677714871">+226 77 71 48 71</a></div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class='bx bx-envelope'></i>
+                        <div><strong>Email</strong><a href="mailto:tallsidi254@gmail.com?subject=Demande%20de%20projet">tallsidi254@gmail.com</a></div>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a class="contact-action email-action" href="mailto:tallsidi254@gmail.com?subject=Demande%20de%20projet"><i class='bx bx-envelope'></i> Email</a>
+                        <a class="contact-action whatsapp-action" href="https://wa.me/22677714871?text=Bonjour%20Sidi%2C%20je%20souhaite%20discuter%20d%27un%20projet." target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i> WhatsApp</a>
+                    </div>
+                </aside>
+
+                <div class="contact-card contact-form-card">
+                    <h3>Envoyer un message</h3>
+                    <p class="contact-intro">Remplissez le formulaire ci-dessous, je vous répondrai dans les meilleurs délais.</p>
+                    <form id="contact-form" class="contact-form">
+                        <div class="input-box">
+                            <label for="from_name">Votre nom</label>
+                            <input type="text" id="from_name" name="from_name" placeholder="Votre nom" required>
+                            <label for="from_email">Votre email</label>
+                            <input type="email" id="from_email" name="from_email" placeholder="Votre email" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="subject">Objet</label>
+                            <input type="text" id="subject" name="subject" placeholder="Objet" required>
+                            <label for="phone">Votre numéro</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Votre numéro">
+                        </div>
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="7" placeholder="Votre message..." required></textarea>
+                        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                        <div class="contact-form-actions">
+                            <button type="submit" id="submit-btn" class="btn">
+                                <span id="btn-text">Envoyer</span>
+                                <i class='bx bx-send' id="btn-icon"></i>
+                            </button>
+                            <a href="#" class="btn btn-secondary nav-trigger" data-section="home">Retour</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="script.js?v=20260907"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1f242d"/>
+  <circle cx="990" cy="80" r="300" fill="#323946"/>
+  <circle cx="1080" cy="590" r="240" fill="#26313a"/>
+  <rect x="72" y="72" width="8" height="486" rx="4" fill="#00eeff"/>
+  <text x="130" y="245" fill="#00eeff" font-family="Arial, sans-serif" font-size="72" font-weight="700">Sidi Tall</text>
+  <text x="130" y="330" fill="#ffffff" font-family="Arial, sans-serif" font-size="42">Développeur Fullstack</text>
+  <text x="130" y="400" fill="#b9c1c8" font-family="Arial, sans-serif" font-size="25">Applications web, mobiles et desktop</text>
+  <text x="130" y="470" fill="#b9c1c8" font-family="Arial, sans-serif" font-size="25">React • Django • Flutter • PostgreSQL</text>
+</svg>
