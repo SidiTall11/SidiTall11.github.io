@@ -135,3 +135,95 @@ if (contactForm && submitBtn && btnText && btnIcon && formStatus) {
 if (window.emailjs) {
     emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
 }
+
+
+// ── Language Selector ───────────────────────────────────────────────────────
+const translations = {
+  fr: {
+    "nav.home":       "Accueil",
+    "nav.about":      "À Propos",
+    "nav.resume":     "CV",
+    "nav.projects":   "Projets",
+    "nav.contact":    "Contact",
+    "home.greeting":  "Salut, je suis",
+    "home.role":      "Développeur Fullstack",
+    "home.cta1":      "Voir mes projets",
+    "home.cta2":      "Me contacter",
+    "about.title":    "À Propos de Moi",
+    "about.subtitle": "Développeur passionné",
+    "resume.title":   "Mon CV",
+    "projects.title": "Mes Projets",
+    "contact.title":  "Me Contacter",
+    "contact.send":   "Envoyer",
+  },
+  en: {
+    "nav.home":       "Home",
+    "nav.about":      "About",
+    "nav.resume":     "Resume",
+    "nav.projects":   "Projects",
+    "nav.contact":    "Contact",
+    "home.greeting":  "Hi, I'm",
+    "home.role":      "Fullstack Developer",
+    "home.cta1":      "View my projects",
+    "home.cta2":      "Contact me",
+    "about.title":    "About Me",
+    "about.subtitle": "Passionate developer",
+    "resume.title":   "My Resume",
+    "projects.title": "My Projects",
+    "contact.title":  "Contact Me",
+    "contact.send":   "Send",
+  },
+  es: {
+    "nav.home":       "Inicio",
+    "nav.about":      "Acerca",
+    "nav.resume":     "CV",
+    "nav.projects":   "Proyectos",
+    "nav.contact":    "Contacto",
+    "home.greeting":  "Hola, soy",
+    "home.role":      "Desarrollador Fullstack",
+    "home.cta1":      "Ver mis proyectos",
+    "home.cta2":      "Contáctame",
+    "about.title":    "Sobre Mí",
+    "about.subtitle": "Desarrollador apasionado",
+    "resume.title":   "Mi CV",
+    "projects.title": "Mis Proyectos",
+    "contact.title":  "Contáctame",
+    "contact.send":   "Enviar",
+  }
+};
+
+let currentLang = localStorage.getItem("lang") || "fr";
+
+function applyLang(lang) {
+  currentLang = lang;
+  localStorage.setItem("lang", lang);
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+  // Update tooltip data-attributes for nav buttons
+  const tooltipMap = {
+    home: translations[lang]["nav.home"],
+    about: translations[lang]["nav.about"],
+    resume: translations[lang]["nav.resume"],
+    projects: translations[lang]["nav.projects"],
+    contact: translations[lang]["nav.contact"],
+  };
+  document.querySelectorAll(".nav-btn[data-section]").forEach(btn => {
+    const sec = btn.getAttribute("data-section");
+    if (tooltipMap[sec]) btn.setAttribute("data-tooltip", tooltipMap[sec]);
+  });
+  // Highlight active button
+  document.querySelectorAll(".lang-btn").forEach(b =>
+    b.classList.toggle("active", b.getAttribute("data-lang") === lang)
+  );
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => applyLang(btn.getAttribute("data-lang")));
+  });
+  applyLang(currentLang);
+});
