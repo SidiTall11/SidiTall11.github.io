@@ -25,13 +25,19 @@
     footer{padding:28px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}.whatsapp{position:fixed;right:22px;bottom:22px;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:26px;box-shadow:0 5px 18px #1b8f4580;z-index:10}
     @media(max-width:800px){.nav-links{display:none}.hero-grid,.about{grid-template-columns:1fr}.hero-art{max-width:330px;margin:auto}.products{grid-template-columns:repeat(2,1fr)}.about{padding:25px}.section-head{display:block}.section-head p{margin-top:5px}}
     @media(max-width:480px){.container{width:min(100% - 28px,1120px)}.nav{height:68px}.hero{padding:55px 0}.products{grid-template-columns:1fr 1fr;gap:11px}.visual{height:140px;font-size:52px}.card-body{padding:12px}.card p{font-size:12px}.price{font-size:14px}.hero-art{min-height:220px;font-size:90px}.benefits{grid-template-columns:1fr}}
+    /* M. Divani visual direction */
+    :root{--primary:#b38a35;--primary-dark:#8b6821;--accent:#161616;--dark:#111;--dark2:#28231a;--rose:#b38a35;--rose-dark:#8b6821;--cream:#f8f4ec;--line:#e5dccb;--shadow:0 18px 55px #5b431b22}
+    header{background:#171512;color:#fff;border-bottom-color:#4a3a20}.logo{color:#fff}.logo span{color:#d4ae58}.nav-links{color:#d7cdbd}.nav-links a:hover{color:#d4ae58}.cart-button{background:#c39a42;color:#171512}.cart-button span{color:#171512}
+    .hero{background:linear-gradient(110deg,#171512 0%,#2e271b 58%,#7b5a25 100%);padding:0;color:#fff}.hero-grid{grid-template-columns:1fr 1fr;gap:30px}.hero h1{color:#fff;font-size:clamp(38px,5.4vw,70px)}.hero p{color:#d8d0c4}.hero-art{min-height:470px;border-radius:0;background:none;transform:none;box-shadow:none;position:relative}.hero-art img{width:100%;height:100%;min-height:470px;object-fit:cover;object-position:center;border-radius:0 0 0 35%;filter:saturate(.9)}
+    .eyebrow{color:#d4ae58}.primary{background:#c39a42;color:#171512}.secondary{border-color:#c39a42;color:#d4ae58;background:transparent}
+    main{background:#f8f4ec}.section-head h2,.about h2,.drawer-head h2{color:#201b14}.section-head h2{font-size:38px}.category.active,.category:hover{background:#b38a35;border-color:#b38a35}.card{border-color:#e2d7c2;border-radius:4px}.card:hover{border-color:#b38a35}.visual{height:240px;background:#f1eadd!important;padding:0}.visual img{width:100%;height:100%;object-fit:cover}.tag{color:#9b752e}.add{background:#1a1815}.add:hover{background:#b38a35}    .about{border-radius:4px;border-color:#e2d7c2}.benefit{background:#f1eadd}.whatsapp{background:#b38a35}.checkout{background:#25d366}.cart-row .mini img{width:48px;height:48px;object-fit:cover;border-radius:10px}
   </style>
 </head>
 <body>
   <header><div class="container nav"><a class="logo" href="#"><img src="assets/logo.png" alt="Logo M. Divani Cosmétique"><span>M. Divani Cosmétique</span></a><nav class="nav-links"><a href="#catalogue">Catalogue</a><a href="#about">La boutique</a><a href="#contact">Contact</a></nav><button class="cart-button" id="openCart">Panier <span id="cartCount">0</span></button></div></header>
-  <section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Beauté • soin • confiance</div><h1>Révélez votre beauté, naturellement.</h1><p>Une sélection de cosmétiques et de soins choisis avec attention pour prendre soin de vous au quotidien.</p><div class="hero-actions"><a class="primary" href="#catalogue">Découvrir la collection</a><a class="secondary" href="#contact">Nous contacter</a></div></div><div class="hero-art" aria-label="Illustration de produits de beauté">🌸</div></div></section>
+  <section class="hero"><div class="container hero-grid"><div><div class="eyebrow">M. Divani Cosmétique</div><h1>La beauté à portée de main.</h1><p>Des soins pensés pour révéler votre éclat, prendre soin de votre peau et sublimer votre quotidien.</p><div class="hero-actions"><a class="primary" href="#catalogue">Découvrir nos produits</a><a class="secondary" href="#contact">Commander sur WhatsApp</a></div></div><div class="hero-art" aria-label="Collection M. Divani Cosmétique"><img src="assets/hero.png" alt="M. Divani Cosmétique — la beauté à portée de main"></div></div></section>
   <main class="container">
-    <section id="catalogue"><div class="section-head"><div><h2>Notre collection</h2><p>Des produits sélectionnés pour votre routine beauté.</p></div></div><div class="categories"><button class="category active" data-category="all">Tout</button><button class="category" data-category="skincare">Soins du visage</button><button class="category" data-category="body">Corps</button><button class="category" data-category="hair">Cheveux</button><button class="category" data-category="accessories">Accessoires</button></div><div class="products" id="products"></div></section>
+    <section id="catalogue"><div class="section-head"><div><h2>Notre collection</h2><p>Des produits sélectionnés pour votre routine beauté.</p></div></div><div class="categories"><button class="category active" data-category="all">Tout</button><button class="category" data-category="soaps">Savons</button><button class="category" data-category="body">Laits & lotions</button><button class="category" data-category="skincare">Soins du visage</button><button class="category" data-category="packs">Packs</button></div><div class="products" id="products"></div></section>
     <section class="about" id="about"><div><div class="eyebrow">À propos</div><h2>Une boutique pensée pour vous</h2><p>Mariam Beauty vous accompagne avec des conseils simples et des produits adaptés à votre style, votre peau et vos envies. Commandez facilement et échangez directement avec nous sur WhatsApp.</p></div><div class="benefits"><div class="benefit"><strong>✓ Produits sélectionnés</strong><span>Une collection choisie avec soin.</span></div><div class="benefit"><strong>✓ Conseil personnalisé</strong><span>Nous vous aidons à choisir.</span></div><div class="benefit"><strong>✓ Commande simple</strong><span>Un message WhatsApp suffit.</span></div><div class="benefit"><strong>✓ Livraison locale</strong><span>Modalités à convenir ensemble.</span></div></div></section>
     <section id="contact" style="padding-top:70px;text-align:center"><div class="eyebrow">Une question ?</div><h2 style="font:700 32px 'Playfair Display',serif">Parlons de votre routine beauté</h2><p style="color:var(--muted);margin:8px auto 20px;max-width:550px">Écrivez-nous sur WhatsApp pour un conseil, une disponibilité ou une commande.</p><a class="primary" id="contactLink" href="#" target="_blank">Contacter Mariam sur WhatsApp</a></section>
   </main>
@@ -42,23 +48,23 @@
     // Remplacer ce numéro par le WhatsApp réel de la boutique avant livraison.
     const SHOP_WHATSAPP = "22670000000";
     const products = [
-      {id:1,name:"Sérum éclat vitamine C",category:"skincare",label:"Soins du visage",price:8500,emoji:"✨"},
-      {id:2,name:"Lait corporel hydratant",category:"body",label:"Corps",price:6500,emoji:"🧴"},
-      {id:3,name:"Huile capillaire nourrissante",category:"hair",label:"Cheveux",price:7500,emoji:"🌿"},
-      {id:4,name:"Gommage doux au café",category:"body",label:"Corps",price:5500,emoji:"☕"},
-      {id:5,name:"Gloss hydratant nude",category:"accessories",label:"Accessoires",price:4000,emoji:"💄"},
-      {id:6,name:"Masque visage apaisant",category:"skincare",label:"Soins du visage",price:6000,emoji:"🫧"},
-      {id:7,name:"Beurre de karité naturel",category:"body",label:"Corps",price:5000,emoji:"🌼"},
-      {id:8,name:"Bonnet satin premium",category:"accessories",label:"Accessoires",price:4500,emoji:"🎀"}
+      {id:1,name:"Lait Ébène Luxe",category:"body",label:"Laits & lotions",price:8500,image:"assets/ebene-luxe.png"},
+      {id:2,name:"Gommage exfoliant Capricieuse",category:"body",label:"Gommages",price:7500,image:"assets/capricieuse-gommage.png"},
+      {id:3,name:"Savon Capricieuse",category:"body",label:"Savons",price:5000,image:"assets/products-row.png"},
+      {id:4,name:"Gamme Capricieuse",category:"packs",label:"Packs",price:22000,image:"assets/products-set.png"},
+      {id:5,name:"Lait corporel Capricieuse",category:"body",label:"Laits & lotions",price:7500,image:"assets/cream-side.png"},
+      {id:6,name:"Savon Booster",category:"soaps",label:"Savons",price:5000,image:"assets/booster.png"},
+      {id:7,name:"Crème de soin",category:"skincare",label:"Soins du visage",price:6500,image:"assets/cream-top.png"},
+      {id:8,name:"Collection M. Divani",category:"packs",label:"Packs",price:28000,image:"assets/products-set.png"}
     ];
     let cart = [];
     const money = value => `${value.toLocaleString("fr-FR")} FCFA`;
     const whatsapp = message => `https://wa.me/${SHOP_WHATSAPP}?text=${encodeURIComponent(message)}`;
     function renderProducts(category = "all") {
-      document.querySelector("#products").innerHTML = products.filter(p => category === "all" || p.category === category).map(p => `<article class="card"><div class="visual">${p.emoji}</div><div class="card-body"><div class="tag">${p.label}</div><h3>${p.name}</h3><p>Un indispensable pour votre routine beauté.</p><div class="card-foot"><span class="price">${money(p.price)}</span><button class="add" data-add="${p.id}" aria-label="Ajouter ${p.name}">+</button></div></div></article>`).join("");
+      document.querySelector("#products").innerHTML = products.filter(p => category === "all" || p.category === category).map(p => `<article class="card"><div class="visual"><img src="${p.image}" alt="${p.name}"></div><div class="card-body"><div class="tag">${p.label}</div><h3>${p.name}</h3><p>Un soin sélectionné pour votre routine beauté.</p><div class="card-foot"><span class="price">${money(p.price)}</span><button class="add" data-add="${p.id}" aria-label="Ajouter ${p.name}">+</button></div></div></article>`).join("");
     }
     function renderCart() {
-      const items = cart.map(item => { const p = products.find(product => product.id === item.id); return `<div class="cart-row"><div class="mini">${p.emoji}</div><div><strong>${p.name}</strong><small>${money(p.price)}</small></div><div class="qty"><button data-minus="${p.id}">−</button><b>${item.qty}</b><button data-plus="${p.id}">+</button></div></div>`; }).join("");
+      const items = cart.map(item => { const p = products.find(product => product.id === item.id); return `<div class="cart-row"><div class="mini"><img src="${p.image}" alt=""></div><div><strong>${p.name}</strong><small>${money(p.price)}</small></div><div class="qty"><button data-minus="${p.id}">−</button><b>${item.qty}</b><button data-plus="${p.id}">+</button></div></div>`; }).join("");
       document.querySelector("#cartItems").innerHTML = items || '<div class="empty">Votre panier est vide.<br>Ajoutez un produit pour commencer.</div>';
       const count = cart.reduce((sum, item) => sum + item.qty, 0), total = cart.reduce((sum, item) => sum + products.find(p => p.id === item.id).price * item.qty, 0);
       document.querySelector("#cartCount").textContent = count; document.querySelector("#cartTotal").textContent = money(total);
