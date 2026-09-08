@@ -44,15 +44,22 @@
 </head>
 
 <body>
+    <!-- Language Selector -->
+    <div class="lang-selector" aria-label="Sélecteur de langue">
+      <button class="lang-btn active" data-lang="fr" title="Français">🇫🇷 FR</button>
+      <button class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+      <button class="lang-btn" data-lang="es" title="Español">🇪🇸 ES</button>
+    </div>
+
 
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-links">
-            <a href="#" class="nav-btn active" data-section="home" data-tooltip="Accueil" aria-label="Accueil"><i class='bx bx-home-alt-2'></i></a>
-            <a href="#" class="nav-btn" data-section="about" data-tooltip="À Propos" aria-label="À propos"><i class='bx bx-user'></i></a>
-            <a href="#" class="nav-btn" data-section="resume" data-tooltip="CV" aria-label="Curriculum Vitae"><i class='bx bx-file-blank'></i></a>
+            <a href="#" class="nav-btn active" data-section="home" data-tooltip="Accueil" data-i18n-tooltip="nav.home" aria-label="Accueil"><i class='bx bx-home-alt-2'></i></a>
+            <a href="#" class="nav-btn" data-section="about" data-tooltip="À Propos" data-i18n-tooltip="nav.about" aria-label="À propos"><i class='bx bx-user'></i></a>
+            <a href="#" class="nav-btn" data-section="resume" data-tooltip="CV" data-i18n-tooltip="nav.resume" aria-label="Curriculum Vitae"><i class='bx bx-file-blank'></i></a>
             <a href="#" class="nav-btn" data-section="portfolio" data-tooltip="Portfolio" aria-label="Portfolio"><i class='bx bx-grid-alt'></i></a>
-            <a href="#" class="nav-btn" data-section="contact" data-tooltip="Contact" aria-label="Contact"><i class='bx bx-chat'></i></a>
+            <a href="#" class="nav-btn" data-section="contact" data-tooltip="Contact" data-i18n-tooltip="nav.contact" aria-label="Contact"><i class='bx bx-chat'></i></a>
         </div>
     </nav>
     <div class="cube-wrapper">
