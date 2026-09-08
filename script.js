@@ -149,11 +149,30 @@ const translations = {
     "home.role":      "Développeur Fullstack",
     "home.cta1":      "Consulter mon CV",
     "home.cta2":      "Me contacter",
+    "home.description": "Développeur Fullstack passionné, spécialisé dans la création d'applications web performantes. Maîtrisant aussi bien le frontend que le backend, je conçois des expériences digitales fluides alliant design moderne et architecture robuste.",
     "about.title":    "À Propos de Moi",
     "about.subtitle": "Développeur passionné",
+    "about.description": "Développeur fullstack basé au Burkina Faso, je conçois des applications web, mobiles et desktop évolutives. Spécialisé dans les technologies modernes — React, Django, Flutter et PostgreSQL — je m'investis dans chaque projet avec rigueur et créativité pour transformer les besoins métier en solutions fiables et utiles.",
     "resume.title":   "Mon CV",
+    "resume.description": "Développeur fullstack et mobile spécialisé dans la conception d'applications web, desktop et mobiles performantes. Je transforme les besoins métier en solutions fiables, modernes et faciles à utiliser.",
     "projects.title": "Mes Projets",
+    "projects.work": "Mes Projets",
+    "projects.services": "Mes Services",
+    "services.intro": "Des solutions numériques conçues pour répondre à un besoin concret, de la première idée jusqu'à la mise en ligne.",
+    "services.cta": "Vous avez un projet en tête ?",
+    "services.ctaButton": "Discutons de votre projet",
+    "services.process": "Mon processus de travail",
     "contact.title":  "Me Contacter",
+    "contact.details": "Mes coordonnées",
+    "contact.detailsIntro": "Je suis disponible pour répondre à vos besoins et vous accompagner dans vos projets.",
+    "contact.formTitle": "Envoyer un message",
+    "contact.formIntro": "Remplissez le formulaire ci-dessous, je vous répondrai dans les meilleurs délais.",
+    "contact.name": "Votre nom",
+    "contact.email": "Votre email",
+    "contact.subject": "Objet",
+    "contact.phone": "Votre numéro",
+    "contact.message": "Votre message",
+    "contact.messagePlaceholder": "Votre message...",
     "contact.send":   "Envoyer",
   },
   en: {
@@ -166,42 +185,52 @@ const translations = {
     "home.role":      "Fullstack Developer",
     "home.cta1":      "View my resume",
     "home.cta2":      "Contact me",
+    "home.description": "Passionate Fullstack Developer specialized in building high-performance web applications. Combining frontend and backend expertise, I create smooth digital experiences with modern design and robust architecture.",
     "about.title":    "About Me",
     "about.subtitle": "Passionate developer",
+    "about.description": "Fullstack developer based in Burkina Faso, I build scalable web, mobile and desktop applications. Specialized in React, Django, Flutter and PostgreSQL, I bring rigor and creativity to every project to turn business needs into reliable, useful solutions.",
     "resume.title":   "My Resume",
+    "resume.description": "Fullstack and mobile developer specialized in designing high-performance web, desktop and mobile applications. I turn business needs into reliable, modern and easy-to-use solutions.",
     "projects.title": "My Projects",
+    "projects.work": "My Projects",
+    "projects.services": "My Services",
+    "services.intro": "Digital solutions designed to meet a concrete need, from the first idea to launch.",
+    "services.cta": "Have a project in mind?",
+    "services.ctaButton": "Let's discuss your project",
+    "services.process": "My work process",
     "contact.title":  "Contact Me",
+    "contact.details": "Contact details",
+    "contact.detailsIntro": "I am available to answer your needs and support you with your projects.",
+    "contact.formTitle": "Send a message",
+    "contact.formIntro": "Fill out the form below and I will get back to you as soon as possible.",
+    "contact.name": "Your name",
+    "contact.email": "Your email",
+    "contact.subject": "Subject",
+    "contact.phone": "Your phone number",
+    "contact.message": "Your message",
+    "contact.messagePlaceholder": "Your message...",
     "contact.send":   "Send",
-  },
-  es: {
-    "nav.home":       "Inicio",
-    "nav.about":      "Acerca",
-    "nav.resume":     "CV",
-    "nav.projects":   "Proyectos",
-    "nav.contact":    "Contacto",
-    "home.greeting":  "Hola, soy",
-    "home.role":      "Desarrollador Fullstack",
-    "home.cta1":      "Ver mi CV",
-    "home.cta2":      "Contáctame",
-    "about.title":    "Sobre Mí",
-    "about.subtitle": "Desarrollador apasionado",
-    "resume.title":   "Mi CV",
-    "projects.title": "Mis Proyectos",
-    "contact.title":  "Contáctame",
-    "contact.send":   "Enviar",
   }
 };
 
-let currentLang = localStorage.getItem("lang") || "fr";
+let currentLang = ["fr", "en"].includes(localStorage.getItem("lang"))
+  ? localStorage.getItem("lang")
+  : "fr";
 
 function applyLang(lang) {
+  if (!translations[lang]) lang = "fr";
   currentLang = lang;
   localStorage.setItem("lang", lang);
+  document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
     }
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (translations[lang][key]) el.setAttribute("placeholder", translations[lang][key]);
   });
   // Update tooltip data-attributes for nav buttons
   const tooltipMap = {

@@ -48,7 +48,6 @@
     <div class="lang-selector" aria-label="Sélecteur de langue">
       <button class="lang-btn active" data-lang="fr" title="Français">🇫🇷 FR</button>
       <button class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
-      <button class="lang-btn" data-lang="es" title="Español">🇪🇸 ES</button>
     </div>
 
 
@@ -70,7 +69,7 @@
             <h3 data-i18n="home.greeting">Bonjour, je suis</h3>
             <h1>Sidi Tall</h1>
             <h3 class="subtitle" data-i18n="home.role">Développeur Fullstack</h3>
-            <p>Développeur Fullstack passionné, spécialisé dans la création d'applications web performantes. Maîtrisant aussi bien le frontend que le backend, je conçois des expériences digitales fluides alliant design moderne et architecture robuste.</p>
+            <p data-i18n="home.description">Développeur Fullstack passionné, spécialisé dans la création d'applications web performantes. Maîtrisant aussi bien le frontend que le backend, je conçois des expériences digitales fluides alliant design moderne et architecture robuste.</p>
             <div class="home-sci">
                 <a href="#" class="btn nav-trigger" data-section="resume" data-i18n="home.cta1">Consulter mon CV</a>
                 <div class="sci">
@@ -97,10 +96,10 @@
             </div>
         </div>
         <div class="about-content">
-            <h2 class="heading">À Propos de <span>Moi</span></h2>
+            <h2 class="heading" data-i18n="about.title">À Propos de Moi</h2>
             <h3 data-i18n="about.subtitle">Développeur Fullstack !</h3>
-            <p>Développeur fullstack basé au Burkina Faso, je conçois des applications web, mobiles et desktop évolutives. Spécialisé dans les technologies modernes — React, Django, Flutter et PostgreSQL — je m'investis dans chaque projet avec rigueur et créativité pour transformer les besoins métier en solutions fiables et utiles.</p>
-            <a href="#" class="btn nav-trigger" data-section="resume">Voir mon CV</a>
+            <p data-i18n="about.description">Développeur fullstack basé au Burkina Faso, je conçois des applications web, mobiles et desktop évolutives. Spécialisé dans les technologies modernes — React, Django, Flutter et PostgreSQL — je m'investis dans chaque projet avec rigueur et créativité pour transformer les besoins métier en solutions fiables et utiles.</p>
+            <a href="#" class="btn nav-trigger" data-section="resume" data-i18n="home.cta1">Voir mon CV</a>
         </div>
     </div>
 
@@ -109,7 +108,7 @@
         <div class="resume-container modern-resume">
             <header class="resume-header">
                 <h2 class="resume-title" data-i18n="resume.title">Curriculum Vitae</h2>
-                <p>Développeur fullstack et mobile spécialisé dans la conception d'applications web, desktop et mobiles performantes. Je transforme les besoins métier en solutions fiables, modernes et faciles à utiliser.</p>
+                <p data-i18n="resume.description">Développeur fullstack et mobile spécialisé dans la conception d'applications web, desktop et mobiles performantes. Je transforme les besoins métier en solutions fiables, modernes et faciles à utiliser.</p>
             </header>
             <div class="resume-layout">
                 <div class="resume-column">
@@ -164,8 +163,8 @@
 
             <!-- Tabs -->
             <div class="resume-tabs portfolio-tabs" role="tablist" aria-label="Sections du portfolio">
-                <button type="button" role="tab" aria-selected="true" aria-controls="tab-my-work" class="tab-btn active" data-tab="my-work">Mes Projets</button>
-                <button type="button" role="tab" aria-selected="false" aria-controls="tab-my-service" class="tab-btn" data-tab="my-service">Mes Services</button>
+                <button type="button" role="tab" aria-selected="true" aria-controls="tab-my-work" class="tab-btn active" data-tab="my-work" data-i18n="projects.work">Mes Projets</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="tab-my-service" class="tab-btn" data-tab="my-service" data-i18n="projects.services">Mes Services</button>
             </div>
 
             <!-- My Work Tab -->
@@ -246,7 +245,7 @@
             <!-- My Service Tab -->
             <div class="tab-content" id="tab-my-service" role="tabpanel">
                 <div class="services-intro">
-                    <p>Des solutions numériques conçues pour répondre à un besoin concret, de la première idée jusqu'à la mise en ligne.</p>
+                    <p data-i18n="services.intro">Des solutions numériques conçues pour répondre à un besoin concret, de la première idée jusqu'à la mise en ligne.</p>
                 </div>
                 <div class="services-grid">
                     <article class="service-card">
@@ -275,11 +274,11 @@
                     </article>
                 </div>
                 <div class="services-cta">
-                    <span>Vous avez un projet en tête ?</span>
-                    <a href="#" class="btn nav-trigger" data-section="contact">Discutons de votre projet <i class='bx bx-right-arrow-alt'></i></a>
+                    <span data-i18n="services.cta">Vous avez un projet en tête ?</span>
+                        <a href="#" class="btn nav-trigger" data-section="contact"><span data-i18n="services.ctaButton">Discutons de votre projet</span> <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
                 <section class="process-section">
-                    <h3>Mon processus de travail</h3>
+                    <h3 data-i18n="services.process">Mon processus de travail</h3>
                     <div class="process-grid">
                         <article><span>01</span><i class='bx bx-conversation'></i><h4>Échange</h4><p>Comprendre votre besoin, vos objectifs et vos contraintes.</p></article>
                         <article><span>02</span><i class='bx bx-bulb'></i><h4>Conception</h4><p>Définir une solution claire, réaliste et adaptée à votre activité.</p></article>
@@ -301,8 +300,8 @@
 
             <div class="contact-layout">
                 <aside class="contact-card contact-details">
-                    <h3>Mes coordonnées</h3>
-                    <p class="contact-intro">Je suis disponible pour répondre à vos besoins et vous accompagner dans vos projets.</p>
+                    <h3 data-i18n="contact.details">Mes coordonnées</h3>
+                    <p class="contact-intro" data-i18n="contact.detailsIntro">Je suis disponible pour répondre à vos besoins et vous accompagner dans vos projets.</p>
 
                     <div class="contact-detail">
                         <i class='bx bx-map'></i>
@@ -324,23 +323,23 @@
                 </aside>
 
                 <div class="contact-card contact-form-card">
-                    <h3>Envoyer un message</h3>
-                    <p class="contact-intro">Remplissez le formulaire ci-dessous, je vous répondrai dans les meilleurs délais.</p>
+                    <h3 data-i18n="contact.formTitle">Envoyer un message</h3>
+                    <p class="contact-intro" data-i18n="contact.formIntro">Remplissez le formulaire ci-dessous, je vous répondrai dans les meilleurs délais.</p>
                     <form id="contact-form" class="contact-form">
                         <div class="input-box">
-                            <label for="from_name">Votre nom</label>
-                            <input type="text" id="from_name" name="from_name" placeholder="Votre nom" required>
-                            <label for="from_email">Votre email</label>
-                            <input type="email" id="from_email" name="from_email" placeholder="Votre email" required>
+                            <label for="from_name" data-i18n="contact.name">Votre nom</label>
+                            <input type="text" id="from_name" name="from_name" placeholder="Votre nom" data-i18n-placeholder="contact.name" required>
+                            <label for="from_email" data-i18n="contact.email">Votre email</label>
+                            <input type="email" id="from_email" name="from_email" placeholder="Votre email" data-i18n-placeholder="contact.email" required>
                         </div>
                         <div class="input-box">
-                            <label for="subject">Objet</label>
-                            <input type="text" id="subject" name="subject" placeholder="Objet" required>
-                            <label for="phone">Votre numéro</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Votre numéro">
+                            <label for="subject" data-i18n="contact.subject">Objet</label>
+                            <input type="text" id="subject" name="subject" placeholder="Objet" data-i18n-placeholder="contact.subject" required>
+                            <label for="phone" data-i18n="contact.phone">Votre numéro</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Votre numéro" data-i18n-placeholder="contact.phone">
                         </div>
-                        <label for="message">Votre message</label>
-                        <textarea id="message" name="message" rows="7" placeholder="Votre message..." required></textarea>
+                        <label for="message" data-i18n="contact.message">Votre message</label>
+                        <textarea id="message" name="message" rows="7" placeholder="Votre message..." data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
                         <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
                         <div class="contact-form-actions">
                             <button type="submit" id="submit-btn" class="btn">
@@ -357,7 +356,7 @@
     </div>
     </div>
 
-    <script src="script.js?v=20260907"></script>
+    <script src="script.js?v=20260908"></script>
 </body>
 
 </html>
