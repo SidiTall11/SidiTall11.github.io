@@ -58,7 +58,7 @@
             <a href="#" class="nav-btn active" data-section="home" data-tooltip="Accueil" data-i18n-tooltip="nav.home" aria-label="Accueil"><i class='bx bx-home-alt-2'></i></a>
             <a href="#" class="nav-btn" data-section="about" data-tooltip="À Propos" data-i18n-tooltip="nav.about" aria-label="À propos"><i class='bx bx-user'></i></a>
             <a href="#" class="nav-btn" data-section="resume" data-tooltip="CV" data-i18n-tooltip="nav.resume" aria-label="Curriculum Vitae"><i class='bx bx-file-blank'></i></a>
-            <a href="#" class="nav-btn" data-section="portfolio" data-tooltip="Portfolio" aria-label="Portfolio"><i class='bx bx-grid-alt'></i></a>
+            <a href="#" class="nav-btn" data-section="portfolio" data-tooltip="Portfolio" data-i18n-tooltip="nav.projects" aria-label="Portfolio"><i class='bx bx-grid-alt'></i></a>
             <a href="#" class="nav-btn" data-section="contact" data-tooltip="Contact" data-i18n-tooltip="nav.contact" aria-label="Contact"><i class='bx bx-chat'></i></a>
         </div>
     </nav>
@@ -67,12 +67,12 @@
             <!-- HOME -->
     <div id="home" class="section active">
         <div class="home-content">
-            <h3>Bonjour, je suis</h3>
+            <h3 data-i18n="home.greeting">Bonjour, je suis</h3>
             <h1>Sidi Tall</h1>
-            <h3 class="subtitle">Développeur Fullstack</h3>
+            <h3 class="subtitle" data-i18n="home.role">Développeur Fullstack</h3>
             <p>Développeur Fullstack passionné, spécialisé dans la création d'applications web performantes. Maîtrisant aussi bien le frontend que le backend, je conçois des expériences digitales fluides alliant design moderne et architecture robuste.</p>
             <div class="home-sci">
-                <a href="#" class="btn nav-trigger" data-section="resume">Consulter mon CV</a>
+                <a href="#" class="btn nav-trigger" data-section="resume" data-i18n="home.cta1">Consulter mon CV</a>
                 <div class="sci">
                     <a href="https://github.com/SidiTall11" target="_blank" rel="noopener noreferrer" data-tooltip="GitHub" aria-label="Voir mon profil GitHub"><i class='bx bxl-github'></i></a>
                     <a href="https://www.linkedin.com/in/sidi-tall-a241b341a/" target="_blank" rel="noopener noreferrer" data-tooltip="LinkedIn" aria-label="Voir mon profil LinkedIn"><i class='bx bxl-linkedin'></i></a>
@@ -98,7 +98,7 @@
         </div>
         <div class="about-content">
             <h2 class="heading">À Propos de <span>Moi</span></h2>
-            <h3>Développeur Fullstack !</h3>
+            <h3 data-i18n="about.subtitle">Développeur Fullstack !</h3>
             <p>Développeur fullstack basé au Burkina Faso, je conçois des applications web, mobiles et desktop évolutives. Spécialisé dans les technologies modernes — React, Django, Flutter et PostgreSQL — je m'investis dans chaque projet avec rigueur et créativité pour transformer les besoins métier en solutions fiables et utiles.</p>
             <a href="#" class="btn nav-trigger" data-section="resume">Voir mon CV</a>
         </div>
@@ -108,7 +108,7 @@
     <div id="resume" class="section resume-section">
         <div class="resume-container modern-resume">
             <header class="resume-header">
-                <h2 class="resume-title">Curriculum Vitae</h2>
+                <h2 class="resume-title" data-i18n="resume.title">Curriculum Vitae</h2>
                 <p>Développeur fullstack et mobile spécialisé dans la conception d'applications web, desktop et mobiles performantes. Je transforme les besoins métier en solutions fiables, modernes et faciles à utiliser.</p>
             </header>
             <div class="resume-layout">
@@ -160,7 +160,7 @@
     <!-- PORTFOLIO -->
     <div id="portfolio" class="section portfolio-section">
         <div class="resume-container">
-            <h2 class="resume-title">Portfolio</h2>
+            <h2 class="resume-title" data-i18n="projects.title">Portfolio</h2>
 
             <!-- Tabs -->
             <div class="resume-tabs portfolio-tabs" role="tablist" aria-label="Sections du portfolio">
@@ -295,7 +295,7 @@
     <div id="contact" class="section contact-section">
         <div class="contact-container">
             <header class="contact-header">
-                <h2 class="heading">Parlons de votre <span>projet</span></h2>
+                <h2 class="heading" data-i18n="contact.title">Parlons de votre projet</h2>
                 <p>Une idée, un besoin métier ou un projet à développer ? Écrivez-moi et discutons-en.</p>
             </header>
 
@@ -344,7 +344,7 @@
                         <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
                         <div class="contact-form-actions">
                             <button type="submit" id="submit-btn" class="btn">
-                                <span id="btn-text">Envoyer</span>
+                                <span id="btn-text" data-i18n="contact.send">Envoyer</span>
                                 <i class='bx bx-send' id="btn-icon"></i>
                             </button>
                             <a href="#" class="btn btn-secondary nav-trigger" data-section="home">Retour</a>

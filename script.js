@@ -147,7 +147,7 @@ const translations = {
     "nav.contact":    "Contact",
     "home.greeting":  "Salut, je suis",
     "home.role":      "Développeur Fullstack",
-    "home.cta1":      "Voir mes projets",
+    "home.cta1":      "Consulter mon CV",
     "home.cta2":      "Me contacter",
     "about.title":    "À Propos de Moi",
     "about.subtitle": "Développeur passionné",
@@ -164,7 +164,7 @@ const translations = {
     "nav.contact":    "Contact",
     "home.greeting":  "Hi, I'm",
     "home.role":      "Fullstack Developer",
-    "home.cta1":      "View my projects",
+    "home.cta1":      "View my resume",
     "home.cta2":      "Contact me",
     "about.title":    "About Me",
     "about.subtitle": "Passionate developer",
@@ -181,7 +181,7 @@ const translations = {
     "nav.contact":    "Contacto",
     "home.greeting":  "Hola, soy",
     "home.role":      "Desarrollador Fullstack",
-    "home.cta1":      "Ver mis proyectos",
+    "home.cta1":      "Ver mi CV",
     "home.cta2":      "Contáctame",
     "about.title":    "Sobre Mí",
     "about.subtitle": "Desarrollador apasionado",
@@ -213,7 +213,10 @@ function applyLang(lang) {
   };
   document.querySelectorAll(".nav-btn[data-section]").forEach(btn => {
     const sec = btn.getAttribute("data-section");
-    if (tooltipMap[sec]) btn.setAttribute("data-tooltip", tooltipMap[sec]);
+    if (tooltipMap[sec]) {
+      btn.setAttribute("data-tooltip", tooltipMap[sec]);
+      btn.setAttribute("aria-label", tooltipMap[sec]);
+    }
   });
   // Highlight active button
   document.querySelectorAll(".lang-btn").forEach(b =>
